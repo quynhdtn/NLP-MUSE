@@ -40,6 +40,15 @@ public class XMLReader {
                         if ($(stx).attr("id") != null)
                             se.setId($(stx).attr("id"));
 
+
+                        $(stx).find("str").each(str -> {
+
+                            se.setStr($(str).text());
+                        });
+
+                        if ($(stx).attr("str") != null)
+                            se.setStr($(stx).attr("str"));
+
                         $(stx).find("w").each(
                                 wtx -> {
                                     Word w = new Word($(wtx).attr("id"), $(wtx).attr("str"), $(wtx).attr("lemma"), $(wtx).attr("pos"), $(wtx).attr("head"), $(wtx).attr("deprel"), se);

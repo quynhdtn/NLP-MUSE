@@ -12,8 +12,12 @@ import java.util.List;
 public class Sentence extends ArrayList<Word> {
 
     String id = "";
+    String str="";
     Text text;
 
+    public Sentence(){
+        super();
+    }
     public void setText(Text text) {
         this.text = text;
     }
@@ -28,6 +32,14 @@ public class Sentence extends ArrayList<Word> {
 
     }
 
+    public void setStr(String str) {
+        this.str = str;
+    }
+
+    public String getStr() {
+
+        return str;
+    }
 
     public String getId() {
         return id;
@@ -38,10 +50,7 @@ public class Sentence extends ArrayList<Word> {
         this.id = id;
     }
 
-    public  Sentence(){
-        super();
 
-    }
 
     public Word getWord(String wId){
 
@@ -53,8 +62,13 @@ public class Sentence extends ArrayList<Word> {
     public String toXMLString(){
         StringBuilder sb = new StringBuilder();
         sb.append("<s id=\"" + id + "\"" + ">\n");
+        if (!str.equals("")) {
+            sb.append("\t<str>");
+            sb.append(str);
+            sb.append("\t</str>\n");
+        }
         this.forEach(w -> {
-            sb.append("\t" + w.toXMLString());
+            sb.append("\t\t" + w.toXMLString());
             sb.append("\n");
         });
         sb.append("</s>\n");
