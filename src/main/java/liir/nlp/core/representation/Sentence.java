@@ -1,6 +1,6 @@
-package liir.nlp.representation;
+package liir.nlp.core.representation;
 
-import liir.nlp.representation.srl.Predicate;
+import liir.nlp.core.representation.srl.Predicate;
 
 import java.util.ArrayList;
 import java.util.Collection;

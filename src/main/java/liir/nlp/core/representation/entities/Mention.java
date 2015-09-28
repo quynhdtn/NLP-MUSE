@@ -1,12 +1,11 @@
-package liir.nlp.representation.entities;
+package liir.nlp.core.representation.entities;
 
-import liir.nlp.representation.Sentence;
-import liir.nlp.representation.Text;
-import liir.nlp.representation.Word;
+import liir.nlp.core.representation.Sentence;
+import liir.nlp.core.representation.Text;
+import liir.nlp.core.representation.Word;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 /**
  * Created by quynhdo on 01/09/15.

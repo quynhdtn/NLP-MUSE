@@ -1,6 +1,6 @@
-package liir.nlp.representation.entities;
+package liir.nlp.core.representation.entities;
 
-import liir.nlp.representation.Text;
+import liir.nlp.core.representation.Text;
 
 import java.util.ArrayList;
 import java.util.Collections;

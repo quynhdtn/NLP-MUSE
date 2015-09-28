@@ -1,4 +1,4 @@
-package liir.nlp.representation;
+package liir.nlp.core.representation;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -44,6 +44,7 @@ public class Word {
         this.head = w.getHead();
         this.deprel = w.getDeprel();
         this.sentence = w.getSentence();
+        this.otherFeatures = w.otherFeatures;
     }
 
     public int getPositionInSentence(){
@@ -127,7 +128,15 @@ public class Word {
     }
 
     public String getFeature (String name){
+
+        if (otherFeatures == null)
+            return  "";
+        if (otherFeatures.containsKey(name))
+
+
         return otherFeatures.get(name);
+        else
+            return "";
     }
 
     public static void main(String[] args) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {

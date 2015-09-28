@@ -1,16 +1,15 @@
-package liir.nlp.io;
+package liir.nlp.core.representation.io;
 
-import liir.nlp.representation.*;
-import liir.nlp.representation.entities.Mention;
-import liir.nlp.representation.entities.MentionCluster;
-import liir.nlp.representation.srl.Predicate;
+import liir.nlp.core.representation.*;
+import liir.nlp.core.representation.entities.Mention;
+import liir.nlp.core.representation.entities.MentionCluster;
+import liir.nlp.core.representation.srl.Predicate;
 import org.xml.sax.SAXException;
 
 import java.io.IOException;
 import java.io.StringReader;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.List;
 
 import static org.joox.JOOX.$;

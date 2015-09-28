@@ -1,4 +1,4 @@
-package liir.nlp.representation;
+package liir.nlp.core.representation;
 
 /**
  * Created by quynhdo on 07/09/15.

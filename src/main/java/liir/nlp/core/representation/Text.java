@@ -1,10 +1,9 @@
-package liir.nlp.representation;
+package liir.nlp.core.representation;
 
-import liir.nlp.representation.entities.Mention;
-import liir.nlp.representation.entities.MentionCluster;
-import liir.nlp.representation.srl.Predicate;
+import liir.nlp.core.representation.entities.Mention;
+import liir.nlp.core.representation.entities.MentionCluster;
+import liir.nlp.core.representation.srl.Predicate;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;

@@ -1,7 +1,7 @@
-package liir.nlp.representation.srl;
+package liir.nlp.core.representation.srl;
 
-import liir.nlp.representation.Word;
-import liir.nlp.representation.entities.Mention;
+import liir.nlp.core.representation.Word;
+import liir.nlp.core.representation.entities.Mention;
 
 import java.util.ArrayList;
 import java.util.HashMap;

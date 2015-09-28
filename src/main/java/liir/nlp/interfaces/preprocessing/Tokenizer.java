@@ -1,13 +1,12 @@
 package liir.nlp.interfaces.preprocessing;
 
-import liir.nlp.io.XMLReader;
-import liir.nlp.representation.Sentence;
-import liir.nlp.representation.Text;
-import liir.nlp.representation.Word;
+import liir.nlp.core.representation.io.XMLReader;
+import liir.nlp.core.representation.Sentence;
+import liir.nlp.core.representation.Text;
+import liir.nlp.core.representation.Word;
 import org.xml.sax.SAXException;
 
 import java.io.IOException;
-import java.util.List;
 
 /**
  * Created by quynhdo on 17/09/15.

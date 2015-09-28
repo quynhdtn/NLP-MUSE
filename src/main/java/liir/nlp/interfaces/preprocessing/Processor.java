@@ -1,6 +1,6 @@
 package liir.nlp.interfaces.preprocessing;
 
-import liir.nlp.representation.Text;
+import liir.nlp.core.representation.Text;
 
 /**
  * Created by quynhdo on 19/09/15.
